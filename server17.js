@@ -11,7 +11,7 @@ app.post("/", (req, res) => {
     var newpath =
       "C:/Users/nairx/tmp/" + Date.now() + "-" + files.file[0].originalFilename;
     fs.rename(oldpath, newpath, function (err) {
-      fs.unlink(oldpath);
+      // fs.unlink(oldpath);
     });
     res.status(200).json({ fields, files });
   });

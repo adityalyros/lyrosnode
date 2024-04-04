@@ -41,7 +41,7 @@ app.post("/delete", (req, res) => {
 
 
   app.post("/copy", (req, res) => {
-    fs.copyFile("myfile.txt", "myfile1.txt", fs.constants.COPYFILE_EXCL, (err) => {
+    fs.copyFile("myfile1.txt", "myfile.txt", fs.constants.COPYFILE_EXCL, (err) => {
       if (err) console.log(err);
       res.status(200).send("Copied");
     });

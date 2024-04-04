@@ -8,6 +8,6 @@ app.get("/",(req,res)=>{
     // res.send(os.type())
     // res.send(os.homedir())
     // res.send(os.platform())
-    // res.send(os.hostname())
+    res.send(os.hostname())
 })
 
